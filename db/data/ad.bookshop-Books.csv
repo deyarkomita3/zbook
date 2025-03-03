@@ -1,0 +1,5 @@
+
+ID;title;descr;author_ID;stock;price;currency_code
+1;The Catcher in the Rye;Description1;123;100;1234;USD
+2;To Kill a Mockingbird;Description2;345;50;56789;EURO
+3;1984;George Orwell;Description3;567;30;5647;INR

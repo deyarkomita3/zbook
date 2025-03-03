@@ -1,0 +1,83 @@
+###
+
+# Get Metadata
+Get http://localhost:4004/odata/v4/admin/$metadata
+
+###
+
+# Get User List
+GET http://localhost:4004/odata/v4/admin/User
+
+###
+
+# Update User Type 
+PATCH   http://localhost:4004/odata/v4/admin/User(15fc90c8-487b-4529-8297-688bdd46db4c)
+Content-Type: application/json
+
+{
+    "user_type":"Admin"
+}
+
+###
+
+# Delete User
+
+DELETE http://localhost:4004/odata/v4/admin/User(002a3760-b1ad-4398-a59c-582a2fdafe8f)
+
+###
+
+# Get Group List
+GET http://localhost:4004/odata/v4/admin/Team?$count=true
+
+###
+
+# Get Member List
+GET http://localhost:4004/odata/v4/admin/Member
+
+###
+
+# Get Member List
+POST http://localhost:4004/odata/v4/admin/Member
+Content-Type: application/json
+
+    {
+        "user_id":"76013c1b-0f5b-47fc-ae5a-c1f623874b15",
+        "event_id":"4cc091ac-befe-4a1f-bbc3-645f05ec4fe9",
+        "start_location_id":"175cef64-dcf0-420d-b2d9-0211b628d2ae",
+        "member_carpool_type":"provider",
+        "seats":4,
+        "occupied_seats":1
+    }
+
+###
+
+# Get Location List
+GET http://localhost:4004/odata/v4/admin/Location
+
+###
+
+# Get Team List
+POST http://localhost:4004/odata/v4/admin/GetTeams
+Content-Type: application/json
+###
+
+# Get Carpool_Member List
+GET http://localhost:4004/odata/v4/admin/Carpool_Member
+
+###
+
+# Post User 
+POST  http://localhost:4004/odata/v4/admin/User
+Content-Type: application/json
+
+{
+    "user_email":"Suhail.Pasha@sap.com",
+    "mob_number":"1234567890",
+    "user_type":"User",
+    "first_name":"Suhail",
+    "last_name":"Pasha"
+}
+
+
+
+
